@@ -42,7 +42,12 @@ module.exports = {
                     "sass-loader"
                 ]
             }
-        ]
+        ],
+    },
+    devServer: {
+        contentBase: __dirname + '/dist',
+        compress: true,
+        port: 8000
     },
     plugins: [
         new HtmlWebPackPlugin({
